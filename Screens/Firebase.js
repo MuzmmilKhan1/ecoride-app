@@ -50,7 +50,7 @@ class Firebase {
                 let bikeData = snapshot.val();
                 console.log(bikeData.sensors.booked);
                 // Update the booked value to 1
-                // await update(child(dbRef, '/your/path/to/booked'), 1);
+                await update(child(dbRef, '/sensors/booked'), 1);
                 return snapshot.val();
             } else {
                 console.log("No data available");

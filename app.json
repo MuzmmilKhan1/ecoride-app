@@ -20,7 +20,10 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "INTERNET"
+        ]
       },
       "package": "com.ecoride"
     },
@@ -33,12 +36,21 @@
       }
     },
     "plugins": [
+      [ 
+        "expo-build-properties",
+        { 
+          "android": 
+        { 
+          "usesCleartextTraffic": true
+        }
+        } 
+      ],
       [
         "@rnmapbox/maps",
         {
           "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYWJkdWxsYWgwMTQzMDUiLCJhIjoiY2x2cjZraXJ5MGFiczJxbncwOWF6dG50NSJ9.yKmkQBQ4ijmG6sPNnCR5Lw",
           "RNMapboxMapsVersion": "11.0.0"
-        } 
+        }
       ],
       [
         "expo-location",
@@ -51,7 +63,8 @@
         {
           "enableGooglePay": true
         }
-      ]
+      ],
+      "expo-build-properties"
     ]
   }
 }

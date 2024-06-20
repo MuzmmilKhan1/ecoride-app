@@ -29,7 +29,8 @@
     "react-native-screens": "~3.29.0",
     "toastify-react-native": "^5.0.0",
     "twrnc": "^4.2.0",
-    "@stripe/stripe-react-native": "~0.35.1"
+    "@stripe/stripe-react-native": "~0.35.1",
+    "expo-build-properties": "~0.11.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

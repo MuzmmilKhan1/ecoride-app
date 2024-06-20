@@ -3,7 +3,7 @@ import { Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 class Helpers {
-    static localhost = 'http://192.168.10.5:3000';
+    static localhost = 'http://13.60.28.134:3000';
     static server = '';
     static apiUrl = `${this.localhost}/api/`
 
